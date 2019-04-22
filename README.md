@@ -26,34 +26,56 @@ Functions do stuff only when they are called. Call a function by its name with p
 functionName();
 ```
 
-Some functions make something change
+Check for understanding: When we run this code, will the page turn red?
 ```js
 function changeBackground() {
   $('body').css('background', 'red');
 }
 ```
 
-Other functions return a value
+Functions can have inputs, and outputs, but they don't have to. 
+
+When a function has an output (gives us back some information), that's called "returning a value". It looks like this: 
 ```js
 function getColor() {
   return 'red';
 }
 ```
 
-Functions can be used together!
-```js
-function changeBackground() {
-  $('body').css('background', getColor());
-}
-```
+When a function needs an input (takes information from us when we call it), that's called a "parameter". It looks like this: 
 
-Functions can take a parameter. A parameter is additional information given to the function that it can use to do something.
-You pass a parameter in the parentheses when you call a function.
 ```js
 function changeBackground(colorName) {
   $('body').css('background', colorName);
 }
-changeBackground('red')
+changeBackground('red');
+```
+
+Check for understanding: When we run this code, what will display on the page? Why?
+
+```js
+function mystery(valOne, valTwo) {
+  return valOne + valTwo;
+}
+
+$("body").append(mystery(3,4));
+```
+Check for understanding: When we run this code, what will display on the page? Why?
+```js
+function mystery(valOne) {
+  return "red";
+}
+
+$("body").append(mystery("blue"));
+```
+
+And finally functions can be used together! How many functions get called when we run this code?
+```js
+function changeBackground() {
+  $('body').css('background', getColor());
+}
+
+changeBackground();
 ```
 
 ### Variables
@@ -76,22 +98,26 @@ x = 2;
 ```
 What is the value of `x` in each line? How many times did we declare `x`? How many times did we assign a value to `x`?
 
-Variables can store lots of different types of data. Strings and numberse are common ones we'll start with.
+Variables can store lots of different types of data. Strings and numbers are common ones we'll start with.
 ```js
 var a = "I am a string!";
 var b = 'I am also a string';
 var c = 1;
 var d = 1.3456;
+var e = "5";
 ```
 What types of values have been assigned to these variables?
 
-You can pass variables to functions as parameters
+Variables are really helpful to use with functions! 
+You can pass variables to functions as parameters. You can also store the return value in a variable. 
+
+Check for understanding: What is the value of "age" on each line of this code?
 ```js
-function changeBackground(colorName) {
-  $('body').css('background', colorName);
+function getOlder(currentAge) {
+  return currentAge + 1;
 }
-var color = 'red';
-changeBackground(color);
+var age = 21;
+age = getOlder(age);
 ```
 
 ### Project
