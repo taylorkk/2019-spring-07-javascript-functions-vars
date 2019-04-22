@@ -23,7 +23,14 @@ $("document").ready(function() {
   
   // 5. Write a click handler to complete the LESS DOGS button. 
     // You'll need to call two functions inside the click handler to make the button work. 
-
+  
+  // BONUS: Create a function that displays the current number of photos as text on the page (I.E. "There are 3 dogs"). 
+         // Call your function every time a button is clicked so the number updates. 
+  
+  // BONUS: Make a new button that add 2 dogs at a time to the page. 
+  
+  // BONUS: Update displayDogs so it also shows the dog's name
+  
 });
 
 
