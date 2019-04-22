@@ -1,21 +1,31 @@
+// We're making a web page called MORE DOGS!
+// It shows a grid of dog images and has two buttons: More and Less Dogs
+// We want the page to start out displaying 4 dogs. 
+// When we click "more dogs", one additional dog should appear on the page. 
+// When we click "less dogs", one dog should be removed the from the page.
+
+// BEFORE YOU START: 
+// 1. What functions do we already have provided? 
+// 2. What do we need to create?
+// 3. Is there any info the page needs to keep track of?
+
 $("document").ready(function() {
-  // declare a variable that stores the number of
-  // dog pictures to display on the page
+  // 1. SET our starting dog number to 4, and display that on the page. 
+    // declare a variable that stores the number of dog pics.
+    // call the display dog function. 
 
-  // write a function that increases the dog count by 1
+  // 2. Make a function that increases the dog count by 1
 
-  // write a function decreases the dog count by 1
+  // 3. Make a function decreases the dog count by 1
 
-  // write a click handler that adds 1 to the dog 
-  // count and then calls the displayDogs function. 
-  // Pass the dog count to the function
-
-  // write a click handler that removes 1 from the dog 
-  // count and then calls the displayDogs function. 
-  // Pass the dog count to the function
-
+  // 4. Write a click handler to complete the MORE DOGS button. 
+    // You'll need to call two functions inside the click handler to make the button work. 
+  
+  // 5. Write a click handler to complete the LESS DOGS button. 
+    // You'll need to call two functions inside the click handler to make the button work. 
 
 });
+
 
 // Displays the number of dogs indicated by count. For example, if we call displayDogs(4), 
 // it would display the first 4 dogs in the list below on the page. 
