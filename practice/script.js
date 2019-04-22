@@ -14,21 +14,11 @@ $("document").ready(function() {
   // count and then calls the displayDogs function. 
   // Pass the dog count to the function
 
-  // Can you combine your functions that increase and
-  // decrease the dog count into 1 function?
 
-  // Update the click handler so that it also displays
-  // the current count value on the page
-
-  // If there's time... (or else it's homework!)
-  // Let's double up!
-  // Create 2 columsn of dogs with 2 sets of buttons
-  // You should be able to add/remove from each column
-  // separately
-  // Put a border between the 2 colums  so you can 
-  // clearly see the difference
 });
 
+// Displays the number of dogs indicated by count. For example, if we call displayDogs(4), 
+// it would display the first 4 dogs in the list below on the page. 
 
 function displayDogs(count) {
   $('#dogs').empty();
@@ -37,7 +27,7 @@ function displayDogs(count) {
   }
 }
 
-
+// Returns info about a dog by position. For example, if we call dog(0), the function would return info about Benji.
 function dog(index) {
   dogs = [
     {
